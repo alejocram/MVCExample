@@ -1,7 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tFf-ta-zcB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Usuario-->
+        <scene sceneID="LWC-cR-fgs">
+            <objects>
+                <viewController id="YMN-Il-2Ze" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAl-7a-VPx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Usuario" image="negocios-user" id="hCv-uY-zS9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zGC-GX-Ms3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="904"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="pqZ-98-Mgb">
+            <objects>
+                <tableViewController id="bhI-up-W9c" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NPG-eu-1kR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="sih-Q0-J4u" detailTextLabel="f9B-r7-v1O" style="IBUITableViewCellStyleSubtitle" id="Oc6-lT-WJA">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oc6-lT-WJA" id="5Hd-Cq-pP8">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sih-Q0-J4u">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f9B-r7-v1O">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bhI-up-W9c" id="L5q-Pq-mX0"/>
+                            <outlet property="delegate" destination="bhI-up-W9c" id="ncq-cy-hhP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="B6h-EI-sBo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGv-kJ-6p2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="-343"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xmc-1I-5CK">
+            <objects>
+                <viewController id="YGm-S5-S5B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZTn-Jm-Gb1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xf5-L6-RCn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0x2-Lj-Pmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="277"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="97U-r0-Q5w">
+            <objects>
+                <tabBarController id="tFf-ta-zcB" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dFG-z9-oXD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mXG-s9-AEf" kind="relationship" relationship="viewControllers" id="poa-Ay-9Cf"/>
+                        <segue destination="dxf-vh-U74" kind="relationship" relationship="viewControllers" id="UzQ-NJ-toD"/>
+                        <segue destination="YMN-Il-2Ze" kind="relationship" relationship="viewControllers" id="kZp-8V-Ivw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBp-Yu-FvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.799999999999997" y="93.719999999999999"/>
+        </scene>
+        <!--Negocios-->
+        <scene sceneID="ArN-Qa-z3O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mXG-s9-AEf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Negocios" image="negocios-negocios" id="e9W-62-x7b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYv-cv-gdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bhI-up-W9c" kind="relationship" relationship="rootViewController" id="jFF-fN-UHD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCs-ni-J2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="-343"/>
+        </scene>
+        <!--Mapa-->
+        <scene sceneID="yLm-P2-2Dj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dxf-vh-U74" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mapa" image="negocios-map" id="NgL-Rd-pp8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zkz-dF-iGn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YGm-S5-S5B" kind="relationship" relationship="rootViewController" id="gSy-5l-9rd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOS-cy-H1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="277"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="negocios-map" width="30" height="30"/>
+        <image name="negocios-negocios" width="30" height="30"/>
+        <image name="negocios-user" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
