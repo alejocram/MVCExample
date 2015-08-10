@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "IDEBusiness.h"
+#include "IDEBusinessDetailViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+//    // Override point for customization after application launch.
+//    IDEBusiness *restaurante = [[IDEBusiness alloc] initWithName:@"Restaurante iOS" details:@"Restaurante en la sede oficial de Apple, donde los empleados puede comer, almorzar, y tomar." rating:3 category:@"Restaurante" webPage:[NSURL URLWithString:@"http://www.ideaslab.com.co"] image:[UIImage imageNamed:@"ideaslab-logo850"]];
+//    
+//    IDEBusinessDetailViewController *VC = [[IDEBusinessDetailViewController alloc] initWithModel:restaurante];
+//    
+//    // Lo asignamos como controlador raíz
+//    self.window.rootViewController = VC;
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

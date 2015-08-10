@@ -14,6 +14,7 @@
 		FE4006B91B6B791B00DBFD30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE4006B71B6B791B00DBFD30 /* LaunchScreen.xib */; };
 		FE4006C51B6B791B00DBFD30 /* MVCExample01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4006C41B6B791B00DBFD30 /* MVCExample01Tests.m */; };
 		FE4006D01B6B7CD300DBFD30 /* IDEBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4006CF1B6B7CD300DBFD30 /* IDEBusiness.m */; };
+		FE7F0C4E1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F0C4D1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FE4006C41B6B791B00DBFD30 /* MVCExample01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCExample01Tests.m; sourceTree = "<group>"; };
 		FE4006CE1B6B7CD300DBFD30 /* IDEBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBusiness.h; sourceTree = "<group>"; };
 		FE4006CF1B6B7CD300DBFD30 /* IDEBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEBusiness.m; sourceTree = "<group>"; };
+		FE7F0C4C1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBusinessDetailViewController.h; sourceTree = "<group>"; };
+		FE7F0C4D1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDEBusinessDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			children = (
 				FE4006A91B6B791B00DBFD30 /* AppDelegate.h */,
 				FE4006AA1B6B791B00DBFD30 /* AppDelegate.m */,
+				FE7F0C4F1B6CD61600FAE1AE /* Controllers */,
 				FE4006D11B6B7CF200DBFD30 /* Models */,
 				FE4006B21B6B791B00DBFD30 /* Main.storyboard */,
 				FE4006B51B6B791B00DBFD30 /* Images.xcassets */,
@@ -125,6 +129,15 @@
 				FE4006CF1B6B7CD300DBFD30 /* IDEBusiness.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		FE7F0C4F1B6CD61600FAE1AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE7F0C4C1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.h */,
+				FE7F0C4D1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7F0C4E1B6CD60E00FAE1AE /* IDEBusinessDetailViewController.m in Sources */,
 				FE4006AB1B6B791B00DBFD30 /* AppDelegate.m in Sources */,
 				FE4006A81B6B791B00DBFD30 /* main.m in Sources */,
 				FE4006D01B6B7CD300DBFD30 /* IDEBusiness.m in Sources */,
@@ -424,6 +438,7 @@
 				FE4006CA1B6B791B00DBFD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE4006CB1B6B791B00DBFD30 /* Build configuration list for PBXNativeTarget "MVCExample01Tests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +447,7 @@
 				FE4006CD1B6B791B00DBFD30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

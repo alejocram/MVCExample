@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface IDEBusiness : NSObject
 
@@ -14,16 +15,26 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *details;
 @property (nonatomic, assign) int rating;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic, strong) NSURL *webPage;
+@property (nonatomic, strong) UIImage *image;
+
 
 //Metodos de clase
 +(id)businessWithName:(NSString *)name
               details:(NSString *)details
-               rating:(int)rating;
+               rating:(int)rating
+             category:(NSString *)category
+              webPage:(NSURL *)webPage
+                image:(UIImage *)image;
 
 //Inicializador designado
 -(id)initWithName:(NSString *)name
-              details:(NSString *)details
-               rating:(int)rating;
+          details:(NSString *)details
+           rating:(int)rating
+         category:(NSString *)category
+          webPage:(NSURL *)webPage
+            image:(UIImage *)image;
 
 //Inicializadores de conveniencia
 -(id)initWithName:(NSString *)name;
